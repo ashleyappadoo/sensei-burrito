@@ -84,39 +84,45 @@ export default function SenseiBurrito() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* Discipline */}
-            <div className="group p-6 rounded-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl bg-white">
+            <div className="group p-6 rounded-lg bg-white transition-transform transform hover:-translate-y-3 hover:shadow-2xl">
               <div className="flex justify-center">
-                <div className="bg-yellow-500 p-6 rounded-full shadow-md group-hover:shadow-2xl transition-all duration-300">
+                <div className="bg-yellow-500 p-6 rounded-full shadow-md transition-all duration-300 group-hover:shadow-2xl group-hover:scale-110">
                   <Sword className="w-10 h-10 text-black" />
                 </div>
               </div>
-              <h3 className="mt-6 text-xl font-extrabold">Code Moral des Arts Martiaux</h3>
+              <h3 className="mt-6 text-xl font-extrabold group-hover:text-yellow-600 transition-colors">
+                Code Moral des Arts Martiaux
+              </h3>
               <p className="mt-2 text-gray-600">
                 La discipline et le respect appliqués à chaque geste culinaire, dans la tradition du bushido.
               </p>
             </div>
 
             {/* Fraîcheur */}
-            <div className="group p-6 rounded-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl bg-white">
+            <div className="group p-6 rounded-lg bg-white transition-transform transform hover:-translate-y-3 hover:shadow-2xl">
               <div className="flex justify-center">
-                <div className="bg-yellow-500 p-6 rounded-full shadow-md group-hover:shadow-2xl transition-all duration-300">
+                <div className="bg-yellow-500 p-6 rounded-full shadow-md transition-all duration-300 group-hover:shadow-2xl group-hover:scale-110">
                   <Leaf className="w-10 h-10 text-black" />
                 </div>
               </div>
-              <h3 className="mt-6 text-xl font-extrabold">Fraîcheur & Fait Maison</h3>
+              <h3 className="mt-6 text-xl font-extrabold group-hover:text-yellow-600 transition-colors">
+                Fraîcheur & Fait Maison
+              </h3>
               <p className="mt-2 text-gray-600">
                 Des ingrédients sélectionnés avec soin, préparés quotidiennement selon nos recettes artisanales.
               </p>
             </div>
 
             {/* Élégance */}
-            <div className="group p-6 rounded-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl bg-white">
+            <div className="group p-6 rounded-lg bg-white transition-transform transform hover:-translate-y-3 hover:shadow-2xl">
               <div className="flex justify-center">
-                <div className="bg-yellow-500 p-6 rounded-full shadow-md group-hover:shadow-2xl transition-all duration-300">
+                <div className="bg-yellow-500 p-6 rounded-full shadow-md transition-all duration-300 group-hover:shadow-2xl group-hover:scale-110">
                   <Crown className="w-10 h-10 text-black" />
                 </div>
               </div>
-              <h3 className="mt-6 text-xl font-extrabold">Take-away Chic & Raffiné</h3>
+              <h3 className="mt-6 text-xl font-extrabold group-hover:text-yellow-600 transition-colors">
+                Take-away Chic & Raffiné
+              </h3>
               <p className="mt-2 text-gray-600">
                 L'élégance à emporter, alliant praticité moderne et esthétique premium.
               </p>
