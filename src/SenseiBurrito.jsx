@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Sword, Leaf, Crown } from "lucide-react";
 
 export default function SenseiBurrito() {
   const [scrolled, setScrolled] = useState(false);
@@ -87,7 +86,7 @@ export default function SenseiBurrito() {
             <div className="group p-6 rounded-lg bg-white transition-transform transform hover:-translate-y-3 hover:shadow-2xl">
               <div className="flex justify-center">
                 <div className="bg-yellow-500 p-6 rounded-full shadow-md transition-all duration-300 group-hover:shadow-2xl group-hover:scale-110">
-                  <Sword className="w-10 h-10 text-black" />
+                  <span className="text-3xl">⚔️</span>
                 </div>
               </div>
               <h3 className="mt-6 text-xl font-extrabold group-hover:text-yellow-600 transition-colors">
@@ -102,7 +101,7 @@ export default function SenseiBurrito() {
             <div className="group p-6 rounded-lg bg-white transition-transform transform hover:-translate-y-3 hover:shadow-2xl">
               <div className="flex justify-center">
                 <div className="bg-yellow-500 p-6 rounded-full shadow-md transition-all duration-300 group-hover:shadow-2xl group-hover:scale-110">
-                  <Leaf className="w-10 h-10 text-black" />
+                  <span className="text-3xl">🍃</span>
                 </div>
               </div>
               <h3 className="mt-6 text-xl font-extrabold group-hover:text-yellow-600 transition-colors">
@@ -117,7 +116,7 @@ export default function SenseiBurrito() {
             <div className="group p-6 rounded-lg bg-white transition-transform transform hover:-translate-y-3 hover:shadow-2xl">
               <div className="flex justify-center">
                 <div className="bg-yellow-500 p-6 rounded-full shadow-md transition-all duration-300 group-hover:shadow-2xl group-hover:scale-110">
-                  <Crown className="w-10 h-10 text-black" />
+                  <span className="text-3xl">👑</span>
                 </div>
               </div>
               <h3 className="mt-6 text-xl font-extrabold group-hover:text-yellow-600 transition-colors">
@@ -189,7 +188,7 @@ export default function SenseiBurrito() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center">
             <img
-              src="/logo-noir.png"
+              src="/logo-blanc.png"
               alt="Sensei Burrito Logo Blanc"
               className="h-8"
             />
