@@ -20,23 +20,23 @@ export default function SenseiBurrito() {
             scrolled ? "bg-black py-2" : "bg-white shadow py-4"
           }`}
         >
-          <div className="flex items-center relative w-32 h-12">
+          <div className="flex items-center justify-center relative w-44 h-20"> {/* Logo plus grand et centré verticalement */}
             <img
               src="/logo-blanc.png"
               alt="Sensei Burrito Logo Blanc"
-              className={`absolute inset-0 h-12 w-auto transition-opacity duration-500 ease-in-out ${
+              className={`absolute inset-0 m-auto h-20 w-auto transition-opacity duration-500 ease-in-out ${
                 scrolled ? "opacity-0" : "opacity-100"
               }`}
             />
             <img
               src="/logo-noir.png"
               alt="Sensei Burrito Logo Noir"
-              className={`absolute inset-0 h-12 w-auto transition-opacity duration-500 ease-in-out ${
+              className={`absolute inset-0 m-auto h-20 w-auto transition-opacity duration-500 ease-in-out ${
                 scrolled ? "opacity-100" : "opacity-0"
               }`}
             />
           </div>
-          <div className="flex space-x-3">
+          <div className="flex items-center space-x-3"> {/* Boutons centrés verticalement */}
             <button className="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700 transition-colors duration-300">
               Click & Collect
             </button>
@@ -50,7 +50,7 @@ export default function SenseiBurrito() {
       {/* Hero Section */}
       <section
         id="accueil"
-        className="relative h-screen flex items-center justify-center text-center text-white"
+        className="relative h-screen flex flex-col items-center justify-center text-center text-white"
       >
         <video
           autoPlay
@@ -60,22 +60,17 @@ export default function SenseiBurrito() {
         >
           <source src="/enso_rotation.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div className="relative z-10 space-y-6">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-yellow-600 transition-all duration-500">
-            Sensei Burrito – Au cœur du ventre de Paris
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="relative z-10 space-y-4">
+          <h1 className="text-5xl md:text-7xl font-extrabold text-white">
+            Sensei Burrito
           </h1>
-          <p className="max-w-2xl mx-auto text-lg md:text-xl transition-all duration-500">
+          <h2 className="text-2xl md:text-3xl text-yellow-500">
+            Au cœur du ventre de Paris
+          </h2>
+          <p className="max-w-2xl mx-auto text-lg md:text-xl text-gray-200">
             Chaque burrito est unique, artisanal, façonné avec respect et équilibre.
           </p>
-          <div className="flex justify-center space-x-4">
-            <button className="bg-yellow-600 text-white px-6 py-3 rounded hover:bg-yellow-700 transition-colors duration-300">
-              Click & Collect
-            </button>
-            <button className="bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition-colors duration-300">
-              Livraison
-            </button>
-          </div>
         </div>
       </section>
 
