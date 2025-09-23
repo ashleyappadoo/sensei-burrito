@@ -163,7 +163,7 @@ export default function SenseiBurrito() {
 
       {/* Histoire */}
       <section id="histoire" className="py-20 bg-gray-100">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-start">
           <img
             src="/paris.jpg"
             alt="Paris"
@@ -171,12 +171,15 @@ export default function SenseiBurrito() {
           />
           <div>
             <h2 className="text-3xl font-extrabold mb-4">Notre Histoire</h2>
-            <p className="mb-4">
-              Niché dans la rue Tiquetonne, entre Les Halles et Montorgueuil, Sensei Burrito perpétue une tradition familiale depuis plus de 40 ans.
+            <p className="mb-4 text-gray-700">
+              Niché dans le ventre de Paris, entre Les Halles de Châtelet et la rue animée de Montorgueuil, <strong>Sensei Burrito</strong> est plus qu'un simple restaurant : c'est un lieu de vie, un espace de convivialité et de partage.
             </p>
-            <button className="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700 transition-colors duration-300">
-              En savoir plus
-            </button>
+            <p className="mb-4 text-gray-700">
+              Installés dans la rue Tiquetonne, au cœur d'un quartier historique et commerçant, nous perpétuons une <span className="text-yellow-600 font-semibold">tradition familiale ancrée ici depuis plus de 40 ans</span>. Un quartier où l'on connaît ses voisins, où les clients deviennent des habitués.
+            </p>
+            <p className="mb-4 text-gray-700">
+              Notre marque s'inspire de l'<strong>Enzo (円相)</strong>, le cercle japonais tracé d'un seul geste, symbole d'unité et d'harmonie. Il est au cœur de notre identité : chaque burrito est unique, artisanal, jamais identique, mais toujours façonné avec respect et équilibre.
+            </p>
           </div>
         </div>
       </section>
