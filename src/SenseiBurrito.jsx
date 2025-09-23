@@ -189,7 +189,7 @@ export default function SenseiBurrito() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center">
             <img
-              src="/logo-blanc.png"
+              src="/logo-noir.png"
               alt="Sensei Burrito Logo Blanc"
               className="h-8"
             />
