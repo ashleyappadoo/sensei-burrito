@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Sword, Leaf, Crown } from "lucide-react";
 
 export default function SenseiBurrito() {
   const [scrolled, setScrolled] = useState(false);
@@ -20,19 +21,19 @@ export default function SenseiBurrito() {
             scrolled ? "bg-black py-2" : "bg-white shadow py-4"
           }`}
         >
-          <div className="flex items-center justify-center relative w-44 h-20"> {/* Logo plus grand et centré verticalement */}
+          <div className="flex items-center relative" style={{ height: scrolled ? '60px' : '80px' }}> {/* Logo agrandi et centré */}
             <img
               src="/logo-blanc.png"
               alt="Sensei Burrito Logo Blanc"
-              className={`absolute inset-0 m-auto h-20 w-auto transition-opacity duration-500 ease-in-out ${
-                scrolled ? "opacity-0" : "opacity-100"
+              className={`mx-auto transition-all duration-500 ease-in-out ${
+                scrolled ? "h-12 opacity-0" : "h-16 opacity-100"
               }`}
             />
             <img
               src="/logo-noir.png"
               alt="Sensei Burrito Logo Noir"
-              className={`absolute inset-0 m-auto h-20 w-auto transition-opacity duration-500 ease-in-out ${
-                scrolled ? "opacity-100" : "opacity-0"
+              className={`mx-auto absolute left-1/2 -translate-x-1/2 transition-all duration-500 ease-in-out ${
+                scrolled ? "h-12 opacity-100" : "h-16 opacity-0"
               }`}
             />
           </div>
@@ -77,21 +78,48 @@ export default function SenseiBurrito() {
       {/* Valeurs */}
       <section id="valeurs" className="py-20 bg-gray-100">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-extrabold mb-12">Nos Valeurs</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6 bg-white shadow rounded">
-              <h3 className="text-xl font-bold text-yellow-600 mb-2">
-                Discipline culinaire
-              </h3>
-              <p>Le code moral des arts martiaux appliqué à la cuisine.</p>
+          <h2 className="text-3xl font-extrabold mb-6">Nos Valeurs</h2>
+          <p className="max-w-2xl mx-auto mb-12 text-gray-600">
+            L'esprit Sensei Burrito repose sur des principes fondamentaux qui guident chacune de nos actions.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {/* Discipline */}
+            <div className="group p-6 rounded-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl bg-white">
+              <div className="flex justify-center">
+                <div className="bg-yellow-500 p-6 rounded-full shadow-md group-hover:shadow-2xl transition-all duration-300">
+                  <Sword className="w-10 h-10 text-black" />
+                </div>
+              </div>
+              <h3 className="mt-6 text-xl font-extrabold">Code Moral des Arts Martiaux</h3>
+              <p className="mt-2 text-gray-600">
+                La discipline et le respect appliqués à chaque geste culinaire, dans la tradition du bushido.
+              </p>
             </div>
-            <div className="p-6 bg-white shadow rounded">
-              <h3 className="text-xl font-bold text-yellow-600 mb-2">Fraîcheur</h3>
-              <p>Produits frais et préparation maison.</p>
+
+            {/* Fraîcheur */}
+            <div className="group p-6 rounded-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl bg-white">
+              <div className="flex justify-center">
+                <div className="bg-yellow-500 p-6 rounded-full shadow-md group-hover:shadow-2xl transition-all duration-300">
+                  <Leaf className="w-10 h-10 text-black" />
+                </div>
+              </div>
+              <h3 className="mt-6 text-xl font-extrabold">Fraîcheur & Fait Maison</h3>
+              <p className="mt-2 text-gray-600">
+                Des ingrédients sélectionnés avec soin, préparés quotidiennement selon nos recettes artisanales.
+              </p>
             </div>
-            <div className="p-6 bg-white shadow rounded">
-              <h3 className="text-xl font-bold text-yellow-600 mb-2">Élégance</h3>
-              <p>Un take-away chic, raffiné et convivial.</p>
+
+            {/* Élégance */}
+            <div className="group p-6 rounded-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl bg-white">
+              <div className="flex justify-center">
+                <div className="bg-yellow-500 p-6 rounded-full shadow-md group-hover:shadow-2xl transition-all duration-300">
+                  <Crown className="w-10 h-10 text-black" />
+                </div>
+              </div>
+              <h3 className="mt-6 text-xl font-extrabold">Take-away Chic & Raffiné</h3>
+              <p className="mt-2 text-gray-600">
+                L'élégance à emporter, alliant praticité moderne et esthétique premium.
+              </p>
             </div>
           </div>
         </div>
