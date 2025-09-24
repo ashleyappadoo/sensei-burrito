@@ -12,18 +12,18 @@ export default function SenseiBurrito() {
   }, []);
 
   return (
-    <div className="font-sans text-gray-900 bg-white">
+    <div className="font-sans text-gray-900 bg-black">
       {/* Header */}
       <header className="fixed top-0 w-full z-50">
         <div
           className={`max-w-7xl mx-auto flex justify-between items-center transition-all duration-500 ease-in-out ${
-            scrolled ? "bg-black py-2" : "bg-white shadow py-4"
+            scrolled ? "bg-black py-2" : "bg-black shadow py-4"
           }`}
         >
           <div className="flex items-center relative" style={{ height: scrolled ? '60px' : '80px' }}> {/* Logo agrandi et centré */}
             <img
-              src="/logo-blanc.png"
-              alt="Sensei Burrito Logo Blanc"
+              src="/logo-noir.png"
+              alt="Sensei Burrito Logo Noir"
               className={`mx-auto transition-all duration-500 ease-in-out ${
                 scrolled ? "h-12 opacity-0" : "h-16 opacity-100"
               }`}
